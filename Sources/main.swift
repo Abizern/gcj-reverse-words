@@ -1,12 +1,12 @@
 import CodeJamHelpers
 
 func solve() {
-  let n = readInt()
+    let n = readInt()
 
-  for i in 1...n {
-    guard let sentence = readLine() else { fatalError() }
-    printCase(i, output: sentence.words().reverse().unwords())
-  }
+    Array(1...n).forEach { (n) in
+        guard let sentence = readLine() else { fatalError() }
+        printCase(n, output: sentence.words().reversed().unwords())
+    }
 }
 
 solve()
